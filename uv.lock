@@ -151,6 +151,23 @@ css = [
 ]
 
 [[package]]
+name = "category-encoders"
+version = "2.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "patsy" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "statsmodels" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/29/59/1184ce74dca0c3e3450bccbb16edfce56f559c76dc794e2d52e1e63b467d/category_encoders-2.9.0.tar.gz", hash = "sha256:659311786e909013b8e8715fd1271244789a1dea278da44058828f88eeab5b40", size = 58005, upload-time = "2025-11-02T18:13:36.929Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/06/afcae4dab08612dac244ace7f478543f4fb83bea94177231ef9b4f7bfa06/category_encoders-2.9.0-py3-none-any.whl", hash = "sha256:49c0e49cd3bd93b21c0bcc928ecbe9b3d09951a6f7fff8cc67f1f33967887227", size = 85859, upload-time = "2025-11-02T18:13:35.388Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2026.5.20"
 source = { registry = "https://pypi.org/simple" }
@@ -368,26 +385,6 @@ wheels = [
 ]
 
 [[package]]
-name = "featuretools"
-version = "1.31.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "cloudpickle" },
-    { name = "holidays" },
-    { name = "numpy" },
-    { name = "packaging" },
-    { name = "pandas" },
-    { name = "psutil" },
-    { name = "scipy" },
-    { name = "tqdm" },
-    { name = "woodwork" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/89/b1/7a9a401d2c52d9e42f609707fae58f7bed424262628f511f99684a0c2363/featuretools-1.31.0.tar.gz", hash = "sha256:01bfb17fcc1715b4c3623c7bc94a8982122c4a0fa03350ed478601bb81f90155", size = 382656, upload-time = "2024-05-14T19:00:02.793Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d4/8c/9e000dfc47b28f482ca7742e11b2f44071cc1981429fd88c922eb1172167/featuretools-1.31.0-py3-none-any.whl", hash = "sha256:87c94e9ae959c89acd83da96bd2583f3ef0f6daaa9639cbb6e46dbde2c742a18", size = 587925, upload-time = "2024-05-14T18:59:58.83Z" },
-]
-
-[[package]]
 name = "fonttools"
 version = "4.63.0"
 source = { registry = "https://pypi.org/simple" }
@@ -431,18 +428,6 @@ wheels = [
 ]
 
 [[package]]
-name = "holidays"
-version = "0.98"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "python-dateutil" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/8d/a1/63c1a45599a82d91a3b5c7a4de5a6050ca253f8c0e74dd14fade3728e033/holidays-0.98.tar.gz", hash = "sha256:09b078a4695d53a35ea01517b331942f3232b3b7e3877f74f6d5227adbedc76e", size = 913785, upload-time = "2026-06-01T19:17:33.888Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c1/0c/51baf49265bd6c8f05bea02ae6ebc96a81218ae364fae89dd6a3e3f7d349/holidays-0.98-py3-none-any.whl", hash = "sha256:65c9ba3402f1d10cc715af0510cdc847e60d8854df640515d546748ca4a24e60", size = 1482103, upload-time = "2026-06-01T19:17:32.01Z" },
-]
-
-[[package]]
 name = "httpcore"
 version = "1.0.9"
 source = { registry = "https://pypi.org/simple" }
@@ -477,15 +462,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/cd/63/9496c57188a2ee585e0f1db071d75089a11e98aa86eb99d9d7618fc1edce/idna-3.18.tar.gz", hash = "sha256:ffb385a7e039654cef1ab9ef32c6fafe283c0c0467bba1d9029738ce4a14a848", size = 196711, upload-time = "2026-06-02T14:34:07.794Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/5e/d4e9f1a599fb8e573b7b87160658329fbf28d19eac2718f51fc3def3aa5a/idna-3.18-py3-none-any.whl", hash = "sha256:7f952cbe720b688055e3f87de14f5c3e5fdaa8bc3928985c4077ca689de849a2", size = 65455, upload-time = "2026-06-02T14:34:06.319Z" },
-]
-
-[[package]]
-name = "importlib-resources"
-version = "7.1.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e4/06/b56dfa750b44e86157093bc8fca0ab81dccbf5260510de4eaf1cb69b5b99/importlib_resources-7.1.0.tar.gz", hash = "sha256:0722d4c6212489c530f2a145a34c0a7a3b4721bc96a15fada5930e2a0b760708", size = 44985, upload-time = "2026-04-12T16:36:09.232Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/8a/db/55a262f3606bebcae07cc14095338471ad7c0bbcaa37707e6f0ee49725b7/importlib_resources-7.1.0-py3-none-any.whl", hash = "sha256:1bd7b48b4088eddb2cd16382150bb515af0bd2c70128194392725f82ad2c96a1", size = 37232, upload-time = "2026-04-12T16:36:08.219Z" },
 ]
 
 [[package]]
@@ -1082,6 +1058,23 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b4/73/731debf26e27e0a0323d7bda270dc2f634b398e38f040a09da1f4351d0aa/nest_asyncio2-1.7.2.tar.gz", hash = "sha256:1921d70b92cc4612c374928d081552efb59b83d91b2b789d935c665fa01729a8", size = 14743, upload-time = "2026-02-13T00:34:04.386Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c5/3c/3179b85b0e1c3659f0369940200cd6d0fa900e6cefcc7ea0bc6dd0e29ffb/nest_asyncio2-1.7.2-py3-none-any.whl", hash = "sha256:f5dfa702f3f81f6a03857e9a19e2ba578c0946a4ad417b4c50a24d7ba641fe01", size = 7843, upload-time = "2026-02-13T00:34:02.691Z" },
+]
+
+[[package]]
+name = "networkx"
+version = "3.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6a/51/63fe664f3908c97be9d2e4f1158eb633317598cfa6e1fc14af5383f17512/networkx-3.6.1.tar.gz", hash = "sha256:26b7c357accc0c8cde558ad486283728b65b6a95d85ee1cd66bafab4c8168509", size = 2517025, upload-time = "2025-12-08T17:02:39.908Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9e/c9/b2622292ea83fbb4ec318f5b9ab867d0a28ab43c5717bb85b0a5f6b3b0a4/networkx-3.6.1-py3-none-any.whl", hash = "sha256:d47fbf302e7d9cbbb9e2555a0d267983d2aa476bac30e90dfbe5669bd57f3762", size = 2068504, upload-time = "2025-12-08T17:02:38.159Z" },
+]
+
+[package.optional-dependencies]
+default = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scipy" },
 ]
 
 [[package]]
@@ -1773,31 +1766,6 @@ wheels = [
 ]
 
 [[package]]
-name = "temporal-series"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "feature-engine" },
-    { name = "featuretools" },
-    { name = "jupyter" },
-    { name = "scikit-learn" },
-    { name = "seaborn" },
-    { name = "setuptools" },
-    { name = "tsfresh" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "feature-engine", specifier = ">=1.9.4" },
-    { name = "featuretools", specifier = ">=1.31.0" },
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "scikit-learn", specifier = ">=1.9.0" },
-    { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "setuptools", specifier = "<82" },
-    { name = "tsfresh", specifier = ">=0.21.2" },
-]
-
-[[package]]
 name = "terminado"
 version = "0.18.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1818,6 +1786,39 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b7/4d/08c89e34946fce2aec4fbb45c9016efd5f4d7f24af8e5d93296e935631d8/threadpoolctl-3.6.0.tar.gz", hash = "sha256:8ab8b4aa3491d812b623328249fab5302a68d2d71745c8a4c719a2fcaba9f44e", size = 21274, upload-time = "2025-03-13T13:49:23.031Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl", hash = "sha256:43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb", size = 18638, upload-time = "2025-03-13T13:49:21.846Z" },
+]
+
+[[package]]
+name = "time-series"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "category-encoders" },
+    { name = "feature-engine" },
+    { name = "jupyter" },
+    { name = "networkx", extra = ["default"] },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "seaborn" },
+    { name = "setuptools" },
+    { name = "tsfresh" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "category-encoders", specifier = ">=2.9.0" },
+    { name = "feature-engine", specifier = ">=1.9.4" },
+    { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "networkx", extras = ["default"], specifier = ">=3.6.1" },
+    { name = "numpy", specifier = ">=2.4.6" },
+    { name = "pandas", specifier = ">=3.0.3" },
+    { name = "scikit-learn", specifier = ">=1.9.0" },
+    { name = "scipy", specifier = ">=1.17.1" },
+    { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "setuptools", specifier = "<82" },
+    { name = "tsfresh", specifier = ">=0.21.2" },
 ]
 
 [[package]]
@@ -1971,21 +1972,4 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/bd/f4/c67440c7fb409a71b7404b7aefcd7569a9c0d6bd071299bf4198ae7a5d95/widgetsnbextension-4.0.15.tar.gz", hash = "sha256:de8610639996f1567952d763a5a41af8af37f2575a41f9852a38f947eb82a3b9", size = 1097402, upload-time = "2025-11-01T21:15:55.178Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3f/0e/fa3b193432cfc60c93b42f3be03365f5f909d2b3ea410295cf36df739e31/widgetsnbextension-4.0.15-py3-none-any.whl", hash = "sha256:8156704e4346a571d9ce73b84bee86a29906c9abfd7223b7228a28899ccf3366", size = 2196503, upload-time = "2025-11-01T21:15:53.565Z" },
-]
-
-[[package]]
-name = "woodwork"
-version = "0.31.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "importlib-resources" },
-    { name = "numpy" },
-    { name = "pandas" },
-    { name = "python-dateutil" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/27/8d/49a9350004be051057561e8f0bd14c40e5fbc61e1f5d7261d3415d54cd19/woodwork-0.31.0.tar.gz", hash = "sha256:6ef82af1d5b6525b02efe6417c574c810cfdcc606cb266bd0d7fb17a1d066b67", size = 178531, upload-time = "2024-05-14T16:38:14.629Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/49/a2/bf83836640086a518c6b0c361765aaaf37b57e127844dd57f6c7e9e11153/woodwork-0.31.0-py3-none-any.whl", hash = "sha256:5cb3370553b5f466f8c8599b1bf559584dc0b798cc1f2da26bbd7029d256c6f9", size = 215208, upload-time = "2024-05-14T16:38:11.073Z" },
 ]
